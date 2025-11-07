@@ -1,0 +1,31 @@
+GET http://localhost:3000/api/v1/infoMeteorologica HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/infoMeteorologica/6907bd0cf53662d9d055c2a3 HTTP/1.1
+
+###
+POST http://localhost:3000/api/v1/infoMeteorologica HTTP/1.1
+Content-Type: application/json
+
+{
+    "temperaturaReal": "23",
+    "sensacionTermica": "26",
+    "cubiertaNubes": "Soleado nublado",
+    "sonda": "6907b94195c652f153e657d3",
+    "fechaMedicion": "2025-11-02T15:30:00.000Z"
+}
+
+###
+PUT http://localhost:3000/api/v1/infoMeteorologica/6907bd0cf53662d9d055c2a3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "temperaturaReal": "19",
+    "sensacionTermica": "20",
+    "cubiertaNubes": "Soleado despejado",
+    "sonda": "6907b94195c652f153e657d3",
+    "fechaMedicion": "2025-11-02T15:30:00.000Z"
+}
+
+###
+DELETE http://localhost:3000/api/v1/infoMeteorologica/6907bd0cf53662d9d055c2a3 HTTP/1.1

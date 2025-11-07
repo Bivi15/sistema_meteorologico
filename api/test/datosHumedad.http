@@ -1,0 +1,31 @@
+GET http://localhost:3000/api/v1/datosHumedad HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/datosHumedad/6907c60ffabf4e99baf43531 HTTP/1.1
+
+###
+POST http://localhost:3000/api/v1/datosHumedad HTTP/1.1
+Content-Type: application/json
+
+{
+    "humedad": "30",
+    "puntoRocio": "15",
+    "sonda": "6907b94195c652f153e657d3",
+    "fechaMedicion": "2025-11-02",
+    "horaMedicion": "13:59"
+}
+
+###
+PUT http://localhost:3000/api/v1/datosHumedad/6907c60ffabf4e99baf43531 HTTP/1.1
+Content-Type: application/json
+
+{
+    "humedad": "45",
+    "puntoRocio": "25",
+    "sonda": "6907b94195c652f153e657d3",
+    "fechaMedicion": "2025-10-02",
+    "horaMedicion": "13:30"
+}
+
+###
+DELETE http://localhost:3000/api/v1/datosHumedad/6907c60ffabf4e99baf43531 HTTP/1.1

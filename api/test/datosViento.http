@@ -1,0 +1,33 @@
+GET http://localhost:3000/api/v1/datosViento HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/datosViento/6907bf2beab2e65bd4a68104 HTTP/1.1
+
+###
+POST http://localhost:3000/api/v1/datosViento HTTP/1.1
+Content-Type: application/json
+
+{
+    "velocidadViento": "135",
+    "velocidadRafagas": "210",
+    "direccionViento": "NE",
+    "sonda": "6907b94195c652f153e657d3",
+    "fechaMedicion": "2025-11-02",
+    "horaMedicion": "13:59"
+}
+
+###
+PUT http://localhost:3000/api/v1/datosViento/6907bf2beab2e65bd4a68104 HTTP/1.1
+Content-Type: application/json
+
+{
+    "velocidadViento": "200",
+    "velocidadRafagas": "290",
+    "direccionViento": "S",
+    "sonda": "6907b94195c652f153e657d3",
+    "fechaMedicion": "2025-11-02",
+    "horaMedicion": "19:59"
+}
+
+###
+DELETE http://localhost:3000/api/v1/datosViento/6907bf2beab2e65bd4a68104 HTTP/1.1

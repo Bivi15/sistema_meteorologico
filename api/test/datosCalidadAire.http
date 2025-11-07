@@ -1,0 +1,41 @@
+GET http://localhost:3000/api/v1/datosCalidadAire HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/datosCalidadAire/6907c7b7fabf4e99baf43549 HTTP/1.1
+
+###
+POST http://localhost:3000/api/v1/datosCalidadAire HTTP/1.1
+Content-Type: application/json
+
+{
+    "indiceCalidad": "25",
+    "ozono_ppb": "13",
+    "particulasPequenas_ugm3": "34",
+    "particulasGrandes_ugm3": "54",
+    "dioxidoNitrogeno_ppb": "23",
+    "monoxidoCarbono_ppb": "43",
+    "dioxidoAzufre_ppb": "56",
+    "sonda": "6907b94195c652f153e657d3",
+    "fechaMedicion": "2025-11-02",
+    "horaMedicion": "13:59"
+}
+
+###
+PUT http://localhost:3000/api/v1/datosCalidadAire/6907c7b7fabf4e99baf43549 HTTP/1.1
+Content-Type: application/json
+
+{
+    "indiceCalidad": "45",
+    "ozono_ppb": "76",
+    "particulasPequenas_ugm3": "100",
+    "particulasGrandes_ugm3": "54",
+    "dioxidoNitrogeno_ppb": "23",
+    "monoxidoCarbono_ppb": "43",
+    "dioxidoAzufre_ppb": "56",
+    "sonda": "6907b94195c652f153e657d3",
+    "fechaMedicion": "2025-10-02",
+    "horaMedicion": "17:00"
+}
+
+###
+DELETE http://localhost:3000/api/v1/datosCalidadAire/6907c7b7fabf4e99baf43549 HTTP/1.1

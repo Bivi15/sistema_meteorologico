@@ -1,0 +1,29 @@
+GET http://localhost:3000/api/v1/archivos HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/archivos/6907cab7fabf4e99baf43572 HTTP/1.1
+
+###
+POST http://localhost:3000/api/v1/archivos HTTP/1.1
+Content-Type: application/json
+
+{
+    "sonda": "6907b94195c652f153e657d3",
+    "localizacion": "Madrid",
+    "urlImagen": "http://ejemplo.com/foto.jpg",
+    "fechaCaptura": "2025-11-02T15:30:00.000Z"
+}
+
+###
+PUT http://localhost:3000/api/v1/archivos/6907cb7057c2107d4d63bc24 HTTP/1.1
+Content-Type: application/json
+
+{
+    "sonda": "6907b94195c652f153e657d3",
+    "localizacion": "Sevilla",
+    "urlImagen": "http://ejemplo.com/foto2.jpg",
+    "fechaCaptura": "2025-11-02T10:00:00.000Z"
+}
+
+###
+DELETE http://localhost:3000/api/v1/archivos/6907cab7fabf4e99baf43572 HTTP/1.1

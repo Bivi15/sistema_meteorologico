@@ -1,0 +1,31 @@
+GET http://localhost:3000/api/v1/usuarios HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/usuarios/690e38336195adad9df0bc66 HTTP/1.1
+
+###
+POST http://localhost:3000/api/v1/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombreUsuario": "JuanPer12",
+    "nombreCompleto": "Juan Perez Rojas",
+    "descripcion": "Prueba de usuario",
+    "email": "juanper@gmail.com",
+    "contrasena": "prueba1234"
+}
+
+###
+PUT http://localhost:3000/api/v1/usuarios/690e38336195adad9df0bc66 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombreUsuario": "PabloR",
+    "nombreCompleto": "Pablo Rodriguez Ruiz",
+    "descripcion": "Prueba de usuario",
+    "email": "juanper@gmail.com",
+    "contrasena": "prueba1234"
+}
+
+###
+DELETE http://localhost:3000/api/v1/usuarios/690e38336195adad9df0bc66 HTTP/1.1

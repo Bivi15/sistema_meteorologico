@@ -1,0 +1,33 @@
+GET http://localhost:3000/api/v1/datosPrecipitacion HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/datosPrecipitacion/6907c3df9659b613bb3853a4 HTTP/1.1
+
+###
+POST http://localhost:3000/api/v1/datosPrecipitacion HTTP/1.1
+Content-Type: application/json
+
+{
+    "tipoPrecipitacion": "Agua",
+    "probabilidadPrecipitacion": "90",
+    "precipitacionAcumulada": "24",
+    "sonda": "6907b94195c652f153e657d3",
+    "fechaMedicion": "2025-11-02",
+    "horaMedicion": "13:59"
+}
+
+###
+PUT http://localhost:3000/api/v1/datosPrecipitacion/6907c3df9659b613bb3853a4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "tipoPrecipitacion": "Granizo",
+    "probabilidadPrecipitacion": "50",
+    "precipitacionAcumulada": "10",
+    "sonda": "6907b94195c652f153e657d3",
+    "fechaMedicion": "2025-10-02",
+    "horaMedicion": "13:30"
+}
+
+###
+DELETE http://localhost:3000/api/v1/datosPrecipitacion/6907c3df9659b613bb3853a4 HTTP/1.1
